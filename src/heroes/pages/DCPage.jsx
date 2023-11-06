@@ -1,6 +1,6 @@
 
 
-const DCPage = () => {
+export const DCPage = () => {
   return (
     <div>
       DcPage
@@ -8,4 +8,4 @@ const DCPage = () => {
   )
 }
 
-export default DCPage
+

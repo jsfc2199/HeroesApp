@@ -1,14 +1,13 @@
 import { Navigate, Route, Routes } from 'react-router-dom'
-import MarvelPage from '../heroes'
-import DCPage from '../heroes'
-import Login from '../auth'
+import {DCPage, MarvelPage} from '../heroes'
+import {Login} from '../auth'
 import { Navbar } from './../ui';
 
 const AppRouter = () => {
   return (
     <>
     <Navbar/>
-
+    
     <Routes>
         <Route path='marvel' element={<MarvelPage/>}/>       
         <Route path='dc' element={<DCPage/>}/>  
