@@ -1,10 +1,11 @@
 import { Navigate, useNavigate, useParams } from "react-router-dom";
 import { getHeroesById } from "../helpers";
+import { useMemo } from "react";
 
 export const HeroPage = () => {
   const { id } = useParams();
 
-  const hero = getHeroesById(id);
+  const hero = useMemo(() => getHeroesById(id), [id]); //la dependencia es el id
 
   const navigate = useNavigate();
 
