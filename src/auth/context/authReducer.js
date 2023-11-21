@@ -6,7 +6,7 @@ export const authReducer = (state = {}, action) => {
       return {
         ...state, //siempre se recomienda desestrcturar el state y luego cambiar solo lo que nos interese
         logged: true,
-        name: action.payload,
+        user: action.payload,
       };
     case types.logout:
       return {
