@@ -8,9 +8,11 @@ export const Login = () => {
 
   const onLogin = () => {
 
+    const lastPath = localStorage.getItem('lastPath') || '/'
+
     login('Juan Franco') //hacemos el dispatch del login
 
-    navigate("/",{
+    navigate(lastPath,{
       replace:true
     });
   };
