@@ -16,7 +16,9 @@ exports[`Pruebas en el search page debe de mostrarse correctamente con valores p
         Searching
       </h4>
       <hr />
-      <form>
+      <form
+        aria-label="form"
+      >
         <input
           autocomplete="off"
           name="searchText"
@@ -39,12 +41,12 @@ exports[`Pruebas en el search page debe de mostrarse correctamente con valores p
       </h4>
       <hr />
       <div
-        aria-label="alert-danger"
         class="alert alert-primary animate__animated animate__fadeIn"
       >
         Search a Hero
       </div>
       <div
+        aria-label="alert-danger"
         class="alert alert-danger animate__animated animate__fadeIn"
         style="display: none;"
       >
